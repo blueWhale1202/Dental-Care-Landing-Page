@@ -5,6 +5,7 @@
 :root {
     --primary-color: #10375c;
     --secondary-color: #2e80ce;
+    --text-color: #575f66;
     --white: #fff;
 }
 
@@ -30,7 +31,7 @@ a {
 }
 
 .btn {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 
@@ -48,6 +49,22 @@ a {
 
 .btn:hover {
     opacity: 0.8;
+}
+
+.section-heading {
+    color: var(--primary-color);
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.section-desc {
+    margin-top: 18px;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67; /* 166.667% */
 }
 
 /* ==================== Header  ==================== */
@@ -189,4 +206,82 @@ a {
     margin-left: -6px;
     width: 210px;
     height: 410px;
+}
+
+/* ==================== Service  ==================== */
+.service {
+    padding: 170px 0;
+}
+
+.service__head {
+    margin: 0 auto;
+    max-width: 468px;
+    text-align: center;
+}
+
+.service-row {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 130px;
+}
+
+.service__img {
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.service-list {
+    margin-bottom: 55px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    padding: 21px 22px 20px;
+    background: var(--white);
+    transition: 0.25s;
+}
+
+.service-item:hover {
+    position: relative;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.service-item:hover .service-item__icon {
+    color: var(--white);
+    background: var(--secondary-color);
+}
+
+.service-item__icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+
+    background: #eff6fd;
+    color: var(--primary-color);
+    transition: 0.25s;
+}
+
+.service-item__title {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.service-item__desc {
+    margin-top: 8px;
+    color: var(--text-color);
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
 }

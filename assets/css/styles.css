@@ -625,3 +625,35 @@ a {
 .blog-item__link:hover {
     color: var(--secondary-color);
 }
+
+/* ==================== Appointment  ==================== */
+.appointment {
+    margin: 85px 0;
+    padding: 85px 0;
+}
+
+.appointment__inner {
+    padding: 100px 0;
+    background: #f6fbff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.appointment__desc {
+    max-width: 617px;
+    margin: 18px auto 38px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.appointment__desc::before {
+    content: "";
+    display: inline-block;
+    width: 136px;
+    height: 2px;
+    background: var(--secondary-color);
+}
